@@ -1,7 +1,9 @@
 body{
-    background-color: #b252a0;
+   
+ background-color: #b252a0;
    
 }
+
 nav{
     display: inline;
     display:grid;
@@ -13,36 +15,92 @@ ul {
     
   }
 li{
-    display: inline;
+    float: left;
     background-color: yellow;
     text-decoration: none;
-    padding: 5px 70px;
+    padding: 5px 90px;
     margin: 2px;
 }
-a{
+li a{
+    display: block;
     text-decoration: none;
 } 
 #main{
-    width: 200px;
-    display:grid;
-    grid-template-areas: "a a"
-                         "b c";
-    grid-template: 2fr, repeat(1fr 2);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:150px 150px;   
    
 } 
 .a {
-    width: 200px;
-    object-fit: contain;
+    grid-column: 1 /3;
+    grid-row: 1/ 3; 
+    position: relative;
+    text-align: center;  
+  }
+ 
+  .b {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: yellow;
+  }
+  .c {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: yellow;
+  }
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight:lighter;
+    margin-bottom: 0px;
+}
+h6{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
-.b {
+.mainImageText1{
+    position: absolute;
+    top: 40%;
+    right:75%;
     background-color: yellow;
-    width: 200px;
-    height: 150px
+    padding: 10px 15px;
+    font-weight: bold;
 }
-.c {
+.mainImageText2{
+    position: absolute;
+    top: 60%;
+    right:80%;
     background-color: yellow;
-}
+    padding: 5px;
+    font-weight: bold;
+    font-size: small;
+}      
+ #taco{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    
+ }
+ #tacoImg{
+    float:left;
+       
+ }
+ #tacoText{
+    padding-top:70px ;
+ }
+ 
+    
+ 
+ .button a{
+    background-color: yellow;
+    padding: 5px;
+    display: inline;
+ }
+
 .photo{
     display: grid;
     grid-gap: 20px;
@@ -52,8 +110,21 @@ a{
      
 }
 footer p {
+   
     text-align: center;
-    font-weight: bold;
-    background-image: linear-gradient(to right, green yellow);
-
+    font-weight: bold;  
+    
 }
+#grams {
+
+    background-image: radial-gradient(yellow 15%,  #b252a0 60%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+#grams p {
+    background-color: #b252a0;
+    padding: 20px;
+    display: inline;
+}
+ 
+
