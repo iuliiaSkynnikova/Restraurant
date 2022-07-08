@@ -9,9 +9,12 @@ nav{
     display:grid;
     grid-template: repeat(1fr 5);
     justify-items: center;
+    width: 100%;
 }
 ul {
-    list-style-type: none;  
+    list-style-type: none; 
+    padding: 0cm;
+     
     
   }
 li{
@@ -19,11 +22,12 @@ li{
     background-color: yellow;
     text-decoration: none;
     padding: 5px 90px;
-    margin: 2px;
+    margin: 5px;
 }
 li a{
     display: block;
     text-decoration: none;
+    
 } 
 #main{
     display: grid;
@@ -87,10 +91,13 @@ h6{
  }
  #tacoImg{
     float:left;
+    
        
  }
  #tacoText{
     padding-top:70px ;
+    
+    
  }
  
     
@@ -102,15 +109,26 @@ h6{
  }
 
 .photo{
-    display: grid;
+    display: block;
     grid-gap: 20px;
     grid-template-columns:repeat(6, 200px);
     grid-template-rows: repeat(2, 200px);
     justify-content: center;
-     
+    object-fit: fill; 
+       
 }
+.box{
+    float: left;
+    margin: 5px;
+
+      
+}
+.box img{
+    width: 255px;
+
+}
+
 footer p {
-   
     text-align: center;
     font-weight: bold;  
     
@@ -126,5 +144,6 @@ footer p {
     padding: 20px;
     display: inline;
 }
+
  
 
